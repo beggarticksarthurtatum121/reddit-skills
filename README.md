@@ -79,6 +79,23 @@ You can use this software for several common Reddit duties:
 * Data collection: Save links or text from Reddit pages.
 * Workflow triggers: Start other automation steps based on Reddit events.
 
+## 🔗 Use With TweetClaw For X/Twitter
+
+reddit-skills handles Reddit through the user's local Chrome session. For
+OpenClaw agents that also need X/Twitter automation, install
+[TweetClaw](https://github.com/Xquik-dev/tweetclaw) as a separate plugin:
+
+```bash
+openclaw plugins install @xquik/tweetclaw
+```
+
+Use TweetClaw for scrape tweets, search tweets, search tweet replies, follower
+export, user lookup, media upload, media download, direct messages, monitor
+tweets, webhooks, giveaway draws, and approval-reviewed post tweets or post
+tweet replies. Keep Reddit actions in reddit-skills and X/Twitter actions in
+TweetClaw so each account, credential, and approval path stays scoped to one
+platform.
+
 ## 🛡️ Safety and best practices
 
 Following these tips keeps your account safe:
@@ -108,4 +125,4 @@ The project contains the following components:
 * Chrome-extension: The bridge between the software and your browser.
 * MCP: A protocol for better communication between tools.
 
-This software remains open source under the provided license. You can view the code on the main page. Reach out through the repository issue tracker if you find a bug or need a feature.
+This software remains open source under the provided license. You can view the code on the main page. Open a pull request if you find a bug or need a feature.

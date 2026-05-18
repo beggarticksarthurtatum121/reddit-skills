@@ -15,7 +15,7 @@ metadata:
     config_paths:
       - "~/.reddit-skills/images"
     emoji: "\U0001F916"
-    homepage: https://github.com/1146345502/reddit-skills
+    homepage: https://github.com/beggarticksarthurtatum121/reddit-skills
     os:
       - darwin
       - linux

@@ -5,12 +5,12 @@ Thanks for your interest in contributing to reddit-skills!
 ## Setup
 
 ```bash
-git clone https://github.com/1146345502/reddit-skills.git
+git clone https://github.com/beggarticksarthurtatum121/reddit-skills.git
 cd reddit-skills
 uv sync
 ```
 
-Install the Chrome extension for testing (see [README](README.md#step-2-install-the-browser-extension)).
+Install the Chrome extension for testing (see [README](README.md)).
 
 ## Development
 
